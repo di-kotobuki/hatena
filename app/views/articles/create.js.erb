@@ -1,0 +1,7 @@
+(() => {
+  document.getElementById("title").value = "";
+  const target = document.getElementById("articles");
+  const el = document.createElement("li");
+  el.textContent = "<%= @article %>";
+  target.appendChild(el);
+})();
